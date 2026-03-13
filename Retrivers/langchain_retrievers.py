@@ -7,8 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1zEKLw01Ki5q0cAHqGYoyqLWYkdYHWOIT
 """
 
-import os
-#os.environ["OPENAI_API_KEY"] = "sk-proj-aOrFC5Kv6j6RomRGR-ACpT3BlbkFJ_oZ1CAo2shNwf4dwJK1rVFosrrfAyrH7TL3Gpf5DnKrkA"
+
 
 !pip install langchain chromadb faiss-cpu openai tiktoken langchain_openai langchain-community wikipedia
 
