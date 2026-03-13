@@ -1,0 +1,83 @@
+# ==============================
+# Python cache files
+# ==============================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ==============================
+# Virtual Environments (ALL)
+# ==============================
+venv/
+.venv/
+env/
+ENV/
+RagEnv/
+pdfrag/
+ytrag/
+*/venv/
+*/RagEnv/
+*/pdfrag/
+*/ytrag/
+
+# ==============================
+# Environment variables
+# ==============================
+.env
+.env.*
+*/.env
+
+# ==============================
+# Jupyter Notebook checkpoints
+# ==============================
+.ipynb_checkpoints/
+
+# ==============================
+# Logs
+# ==============================
+*.log
+
+# ==============================
+# Models / Large files
+# ==============================
+Models/
+*.h5
+*.pt
+*.pth
+*.ckpt
+*.bin
+
+# ==============================
+# IDE files
+# ==============================
+.vscode/
+.idea/
+
+# ==============================
+# OS files
+# ==============================
+.DS_Store
+Thumbs.db
+
+# Ignore PDFs
+*.pdf
+
+# Ignore FAISS vector DB
+*.faiss
+*.pkl
+vectorstore/
+
+# Ignore large index files
+*.index
+
+# Ignore docx files
+*.docx
+
+Chains/
+
+DocumentLoaders/
+OutputParsers/
+Prompts/
+
+Retrivers/
+Vector_Database/

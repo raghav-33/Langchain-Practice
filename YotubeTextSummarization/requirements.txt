@@ -1,0 +1,17 @@
+langchain
+langchain-core
+langchain-community
+langchain-text-splitters
+pypdf
+
+faiss-cpu
+youtube-transcript-api
+
+langchain-huggingface
+transformers
+huggingface-hub
+
+python-dotenv
+
+streamlit
+
