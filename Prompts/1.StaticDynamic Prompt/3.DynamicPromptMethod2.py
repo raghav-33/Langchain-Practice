@@ -2,7 +2,7 @@
 '''
 Why Method 2 ?
 In Previous Method We create our Dynamic Prompt in same File as Main code
-Due to which file Become messy 
+Due to which file Become messy , Now we Create Our promt Template in Different File & call in this File.
 
 NOTE : 
 We can Create Our Dynamic Prompt in Sepearte File and Call it in main file
@@ -10,8 +10,8 @@ We can Create Our Dynamic Prompt in Sepearte File and Call it in main file
 
 '''
 Setup 
-DynamicPromptMethod2: Main Code File
-PromptGenerator : Template Generator File
+DynamicPromptMethod2.py: Main Code File
+PromptGenerator.py : Template Generator File (when run it , json file got automatically created)
 NOTE: In this file we call our Prompt Template File
 '''
 
