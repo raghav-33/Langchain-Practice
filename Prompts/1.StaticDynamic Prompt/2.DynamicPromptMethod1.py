@@ -1,3 +1,12 @@
+# File 2 (after static prompt File 1)
+'''
+Way to Create : 
+1. define Template With Place Holders.
+2. define Input Variable.
+3.fill Placeholder
+
+'''
+
 from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
 import streamlit as st
