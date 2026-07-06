@@ -17,7 +17,7 @@ class Student(BaseModel):
     lastName: str ='devgan'    # Deafult Value Set
     age: Optional[int] = None  # if age is not given then it is None
     email: EmailStr            # validation applied [Emailstr is built in data type present in pydantic]
-    cgpa: float = Field(gt=0 , lt=10) # Constraint applied {cgpa should greater than 0 and less than 10}
+    cgpa: float = Field(gt=0 , lt=10) # Constraint applied | Field Function | {cgpa should greater than 0 and less than 10}
 
 # Created a dictionary
 new_student = {'name':'nitish','email': "raghavdevgan333@gmail.com",'cgpa':9}
