@@ -16,7 +16,7 @@ model = ChatHuggingFace(llm = llm)
 parser = JsonOutputParser()
 
 template = PromptTemplate(
-    template = 'Give me name , age and city of a fictional person \n {format_instruction}',  # We have to pass additional paramter which tell, in which format we want output
+    template = 'Give me name , age and city of a fictional person \n {format_instruction}',  # We have to pass additional paramter which tell, in which format we want output from LLM
     input_variables=[],
     partial_variables={'format_instruction': parser.get_format_instructions()}     #A partial variable in LangChain is a prompt variable whose value is pre-filled at template creation time, so the user or chain does not need to provide it at runtime. 
 )
