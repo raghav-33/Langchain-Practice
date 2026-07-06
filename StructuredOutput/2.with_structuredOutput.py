@@ -70,6 +70,10 @@ load_dotenv()
 # Model Created
 model = ChatOpenAI()
 
+'''
+# What is Different Here ?
+Here We Also Want to Extract Pros and Cons from the Review , BUT they are OPTIONAL , if exist then extract otherwise no need
+'''
 
 # Schema Created For Structured Output
 class Review(TypedDict):
