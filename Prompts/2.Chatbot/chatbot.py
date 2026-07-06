@@ -1,5 +1,6 @@
 # Chatbot Application | APP
 
+# Note : After Dynamic prompts , next file is this where we create Chatbot without UI in Console 
 from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate,load_prompt
