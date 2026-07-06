@@ -15,6 +15,13 @@ llm = HuggingFaceEndpoint(
 #Model Object Created
 model = ChatHuggingFace(llm=llm)
 
+'''
+What we are Going to do Understand its need , instead of result.content ?
+First we will give topic to LLM , to Generate Detailed Report on that topic , then pass 
+that "Detailed Report" (result of 1 llm pass to then again LLM ) to LLM for summarizing that report 
+'''
+
+
 # 1st Prompt 
 template1 = PromptTemplate(
     template='write a detailed report on {topic}',
@@ -31,7 +38,7 @@ template2 = PromptTemplate(
 prompt1 = template1.invoke({'topic':'black hole'})
 result1 = model.invoke(prompt1)
 
-prompt2 = template2.invoke({'text':result1.content})
+prompt2 = template2.invoke({'text':result1.content})  # result.content : Passing Result of LLM to LLM for generate summary
 result2 = model.invoke(prompt2)
 
 # Printing Summary of Detailed Topic | result1 |prompt 1
