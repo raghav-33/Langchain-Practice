@@ -1,3 +1,5 @@
+# Way to Create Typed Dict : Understand this file
+
 from typing import TypedDict
 
 # Dictinory Format Specified
