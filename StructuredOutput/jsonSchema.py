@@ -1,4 +1,8 @@
-''' Json Schema is used when our whole project is not in one language.Then we not used typedDict and pydantic '''
+''' Json Schema is used when our whole project is not in one language.Then we not used typedDict and pydantic 
+    Like For Backend we are Using : Python & for Frontend : using React
+
+
+'''
 {
     "title": "student",
     "description": "schema about Students",
