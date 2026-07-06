@@ -63,7 +63,8 @@ print(result['sentiment'])
 #############################Complex Structured output#######################################################################
 from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
-from typing import TypedDict , Annotated , Optional
+from typing import TypedDict , Annotated , Optional , Literal  
+
 
 load_dotenv()
 
@@ -73,12 +74,15 @@ model = ChatOpenAI()
 '''
 # What is Different Here ?
 Here We Also Want to Extract Pros and Cons from the Review , BUT they are OPTIONAL , if exist then extract otherwise no need
+
+i. Optional : it used when something is Optional in Output.
+ii. Literal : Used When we want Output Come from Given Mention Options. eg Literal[pass ,fail] : here LLM Return only one option either pass or fail
 '''
 
 # Schema Created For Structured Output
 class Review(TypedDict):
     summary : Annotated[str,"A Brief Summaryof the review"]
-    sentiment : Annotated[str,"Return Sentiment of Review Either Positive , Negative or Netural"]
+    sentiment : Annotated[Literal[positive,negative,neutral],"Return Sentiment of Review Either Positive , Negative or Netural"]  # Literal : Return Output From given Options.
     pros : Annotated[Optional[list[str]],"Write Down all the Pro's Inside a list"]  ## Pros are Optional , Some mobiles have or some not
     cons : Annotated[Optional[list[str]],"Write Down all the Con's Inside a list"]
 
