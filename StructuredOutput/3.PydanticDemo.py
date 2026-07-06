@@ -1,4 +1,6 @@
 '''
+problem with TypedDict : Not Provide data Validation , only Provide TypeHints
+
 Pydantic is a Python library used for data validation, parsing, and settings management using Python type hints. 
 It ensures that the data your program receives is correct, structured, and safe to use.
 
