@@ -21,6 +21,8 @@ chat_template = ChatPromptTemplate([
     ('human', 'Explain in simple terms, what is {topic}') # Dynamic Messages
 ])
 
+# Note : in some Places you will see ChatPromptTemplate.from_messages : It also give same o/p as Above.
+
 prompt = chat_template.invoke({'domain':'cricket','topic':'Dusra'})
 
 print(prompt)
