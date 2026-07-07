@@ -14,7 +14,7 @@ from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 # Runnable Sequence , parallel and passThrough import
-from langchain_core.runnables import RunnableSequence , RunnableParallel , RunnablePassthrough
+from langchain_schema.runnable import RunnableSequence , RunnableParallel , RunnablePassthrough
 
 load_dotenv()
 
