@@ -41,6 +41,7 @@ model2 = ChatAnthropic(model ='claude-3')
 parser = StrOutputParser()
 
 # Step4 : Chain
+# Runnable Parallel : is type of Runnable with the help of that we can execute multiple Chains Parallel
 parallel_chain = RunnableParallel({
     'notes' : prompt1 | model1 | parser ,   # notes : name given to chain 1
     'quiz' : prompt2 | model2 | parser 
