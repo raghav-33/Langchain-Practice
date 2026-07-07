@@ -4,7 +4,7 @@
 What we are going to do ?
 we give to LLM a topic to generate a joke about topic.
 LLM give generate a Joke
-then We pass Same Joke To LLM to explain it 
+then We pass Same Joke To another LLM to explain it 
 we want result show in form of first Joke9done through Runnable pass Through) which show as its generated joke
 then its explaination (by sequential and parallel runnable)
 '''
