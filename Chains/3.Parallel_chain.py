@@ -2,6 +2,8 @@
 What we are going to build 
 We are given Detailed long text about topic 
 we will generate notes from that and also quiz and show to user 
+
+# parellel Chains : Multiple Chain run parralley and at last their output is combined in one to produce final outpur
 '''
 
 # Parallel Chains 
