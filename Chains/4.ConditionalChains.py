@@ -52,8 +52,9 @@ prompt3  = PromptTemplate(
 branch_chain = RunnableBranch(
     (lambda x:x.sentiment  == 'positive' , prompt2 | model | parser),  # indicate If condt 1 is True then Execute this Chain
     (lambda x:x.sentiment  == 'negative' , prompt3 | model | parser),  # indicate If condt 2 is True then Execute this Chain
-     lambda x: "Could not find sentiment"        # Deafult Chain , If any Condition is not true then execute it.
+    RunnableLambda(lambda x: "Could not find sentiment")       # Deafult Chain , If any Condition is not true then execute it.
 )
+# RunnableLambda : convert lambda function into Runnable
 
 
 chain = classifier_chain | branch_chain
