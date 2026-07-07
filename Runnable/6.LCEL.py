@@ -1,7 +1,7 @@
 # Langchain Expression Language
 '''
 What is it ?
-Langchain team Runnable Sequence is mostly commonly used runnable
+Langchain team identify Runnable Sequence is mostly commonly used runnable
 so to make it easy Langchain team replace 
 Runnable Sequence Syntax With "pipe operator ( | )"
 '''
