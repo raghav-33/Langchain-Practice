@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 # Runnable Sequence and parallel import
-from langchain_core.runnables import RunnableSequence , RunnableParallel
+from langchain.schema.runnables import RunnableSequence , RunnableParallel
 
 load_dotenv()
 
